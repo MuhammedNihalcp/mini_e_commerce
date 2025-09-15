@@ -53,4 +53,12 @@ A simple yet beautiful **E-commerce app** built with **Flutter**, featuring **Fi
 
 ## 📂 Project Structure  
 
+## 📸 Screenshots  
+
+![Login Screen](assets/screenshot/Screenshot_1757943329.png)  
+![Product List](assets/screenshot/Screenshot_1757943303.png)  
+![Splash Scren](assets/screenshot/Screenshot_1757943334.png) 
+![User Profile](assets/screenshot/Screenshot_1757943315.png)
+![Cart Screen](assets/screenshot/Screenshot_1757943310.png)
+
 
