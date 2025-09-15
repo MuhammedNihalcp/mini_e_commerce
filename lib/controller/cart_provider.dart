@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mini_commerce/model/product_model/product.dart';
 import 'package:uuid/uuid.dart';
-import 'package:stripe_payment/stripe_payment.dart';
+// import 'package:stripe_payment/stripe_payment.dart';
 
 class CartItem {
   final String id;
@@ -65,15 +65,15 @@ class CartProvider extends ChangeNotifier {
   }
 
   /// Initialize Stripe (call once in main or provider init)
-  void initStripe(String publishableKey) {
-    StripePayment.setOptions(
-      StripeOptions(
-        publishableKey: publishableKey,
-        merchantId: "Test",
-        androidPayMode: 'test',
-      ),
-    );
-  }
+  // void initStripe(String publishableKey) {
+  //   StripePayment.setOptions(
+  //     StripeOptions(
+  //       publishableKey: publishableKey,
+  //       merchantId: "Test",
+  //       androidPayMode: 'test',
+  //     ),
+  //   );
+  // }
 
   /// Checkout using Stripe
   Future<bool> checkout() async {
@@ -81,10 +81,10 @@ class CartProvider extends ChangeNotifier {
 
     try {
       // Step 1: Show Stripe Card Form
-      final PaymentMethod paymentMethod =
-          await StripePayment.paymentRequestWithCardForm(
-            CardFormPaymentRequest(),
-          );
+      // final PaymentMethod paymentMethod =
+      //     await StripePayment.paymentRequestWithCardForm(
+      //       CardFormPaymentRequest(),
+      //     );
 
       // Step 2: Here, normally you would send paymentMethod to your backend
       // and create a PaymentIntent, then confirm payment with clientSecret
